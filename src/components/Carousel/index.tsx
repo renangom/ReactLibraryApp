@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../../Images/BooksImages/book-luv2code-1000.png'
+import Book from '../Book'
 
 export default function Carousel() {
   return (
@@ -13,42 +13,24 @@ export default function Carousel() {
             {/*  DESKTOP */}
             <div className='carousel-inner'>
                 <div className='carousel-item active'>
-                    <div className='row d-flex justify-content-center align-items-center'>
-                        <div className='col-xs-6 col-sm-6 col-md-4 col-lg-3 mb-3'>
-                            <div className='text-center'>
-                                <img src={image} width='151'
-                                height='233' alt='book' /> 
-                                <h6 className='mt-2'>Book</h6>
-                                <p>Luv2Code</p>
-                                <a className='btn main-color text-white' href='#'>Reserve</a>
-                            </div>
-                        </div>
+                    <div className="row d-flex justify-content-center align-items-center">
+                        <Book />
+                        <Book />
+                        <Book />
                     </div>
                 </div>
-                <div className='carousel-item active'>
-                    <div className='row d-flex justify-content-center align-items-center'>
-                        <div className='col-xs-6 col-sm-6 col-md-4 col-lg-3 mb-3'>
-                            <div className='text-center'>
-                                <img src={image} width='151'
-                                height='233' alt='book' /> 
-                                <h6 className='mt-2'>Book</h6>
-                                <p>Luv2Code</p>
-                                <a className='btn main-color text-white' href='#'>Reserve</a>
-                            </div>
-                        </div>
+                <div className='carousel-item'>
+                    <div className="row d-flex justify-content-center align-items-center">
+                        <Book />
+                        <Book />
+                        <Book />
                     </div>
                 </div>
-                <div className='carousel-item active'>
-                    <div className='row d-flex justify-content-center align-items-center'>
-                        <div className='col-xs-6 col-sm-6 col-md-4 col-lg-3 mb-3'>
-                            <div className='text-center'>
-                                <img src={image} width='151'
-                                height='233' alt='book' /> 
-                                <h6 className='mt-2'>Book</h6>
-                                <p>Luv2Code</p>
-                                <a className='btn main-color text-white' href='#'>Reserve</a>
-                            </div>
-                        </div>
+                <div className='carousel-item'>
+                    <div className="row d-flex justify-content-center align-items-center">
+                        <Book />
+                        <Book />
+                        <Book />
                     </div>
                 </div>
                 <button className='carousel-control-prev' type='button' data-bs-target='#carouselExampleControls'
@@ -65,18 +47,7 @@ export default function Carousel() {
 
             {/* MOBILE */ }
             <div className='d-lg-none mt-3'>
-                <div className='row d-flex justify-content-center align-items-center'>
-                    <div className='text-center'>
-                        <img src={image}
-                        width='151' height='233' alt='books' />
-
-                        <h6 className='mt-2'>
-                            <b>Book</b>
-                        </h6>
-                        <p>Luv2Code</p>
-                        <a className='btn main-color text-white' href='#'>Reserve</a>
-                    </div>
-                </div>
+                <Book />
             </div>
             <div className='homepage-carousel-title mt-3'>
                 <a className='btn btn-outline-secondary btn-lg' href='#'> View More </a>
