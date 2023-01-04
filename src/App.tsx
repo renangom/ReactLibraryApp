@@ -4,6 +4,7 @@ import "./App.css"
 import ExploreTopBooks from './components/ExploreTopBooks';
 import Carousel from './components/Carousel';
 import Heros from './components/Heros';
+import LibraryServices from './components/LibraryServices';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <ExploreTopBooks />
       <Carousel />
       <Heros />
+      <LibraryServices />
     </div>
   );
 }
